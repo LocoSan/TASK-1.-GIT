@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Богатей. The Game</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="difficultyModal" class="modal">
+        <!--Выбор сложности-->
+        <div class="modal-content">
+            <h2>Выбери уровень сложности</h2>
+            <button class="difficulty-btn" data-diff="easy">Лёгкий</button>
+            <button class="difficulty-btn" data-diff="medium">Средний</button>
+            <button class="difficulty-btn" data-diff="hard">Сложный</button>
+        </div>
+    </div>
+    <div class="container">
+        <!--Игровое поле-->
+        <h1 class="title">Богатей. The Game</h1>
+        <div class="image-placeholder">
+            <img id="coinImage" src="media/coins.png" alt="Coin" />
+            <img id="goldBag" src="media/gold-bag.png" alt="Мешочек">
+        </div>
+        <div class="score" id="score">Богатство: 0</div>
+        <div id="playTime">Время в игре: 0:00</div>
+        <button id="clickBtn">Клацни!</button>
+        <button id="resetBtn" class="reset-btn">Новая игра</button>
+    </div>
+    <div class="upgrades">
+        <!--Апгрейды-->
+        <button id="clickUpgradeBtn">Поработать руками (Цена: <span id="clickUpgradeCost">10</span>)</button>
+        <button id="autoIncomeBtn">Вложиться в акции (Цена: <span id="autoIncomeCost">50</span>)</button>
+    </div>
+    <button class="sound-toggle-btn" id="soundToggleBtn">🔊</button>
+    <div id="secretBtn"></div>
+    <div id="easterEggToast" class="toast"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

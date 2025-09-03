@@ -245,3 +245,7 @@ button {
         transform: scale(1.2);
     }
 }
+
+.classStyle {
+	color: yellow;
+}
